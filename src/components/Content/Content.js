@@ -1,15 +1,18 @@
-import React, {Component} from "react";
+import React from "react";
 import classes from "./Content.module.css";
 
-export default class Content extends Component {
-
-
-    render() {
+export const Content = ({contry}) =>  {
+        if (contry === null) return <div>Hello!</div>; // СДЕЛАТЬ КРАСИВУЮ ЗАГЛУШКУ ИЛИ ПОСТАВИТЬ ДЕФОЛТНУЮ СТРАНУ
+                                                        // СТЕЛИЗОВАТЬ ВСЁ С ПОМОЩЬЮ UI MATERIAL ПОМЕНЯТЬ ФОН ДОБАВИТЬ ПОИСК
+                                                        //ДОБАВИТЬ KEY В МАССИВ
         return (
             <div>
-                content
+                {contry.name}
+                {contry.capital}
+                {contry.altSpellings.map(item => <div>{item}</div>)}
+                {contry.name}
+                {contry.name}
             </div>
         )
-    }
 };
 

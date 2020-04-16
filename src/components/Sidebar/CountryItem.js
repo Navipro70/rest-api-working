@@ -1,7 +1,7 @@
 import React from "react";
 
-const CountryItem = (props) => {
+export const CountryItem = ({name, countryHandler, id}) => {
     return (
-        <li></li>
+        <li onClick={() => countryHandler(id)}>{name}</li>
     )
 };

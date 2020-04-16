@@ -6,7 +6,8 @@
 }
 
 .sidebar li {
-    margin: 5px;
+    margin: 10px;
+    cursor: pointer;
 }
 
 .loadButton {
