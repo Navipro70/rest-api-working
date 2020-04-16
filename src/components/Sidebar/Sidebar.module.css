@@ -1,0 +1,16 @@
+.sidebar {
+    list-style-type: none;
+    background: rgba(205, 214, 51, 0.1);
+    border: 2px solid #282c34;
+    border-radius: 10px;
+}
+
+.sidebar li {
+    margin: 5px;
+}
+
+.loadButton {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
