@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState} from "react";
 import classes from "./Sidebar.module.css";
 import Button from "@material-ui/core/Button";
 import {Preloader} from "../../Common/Preloader";
@@ -23,4 +23,4 @@ const Sidebar = ({countryData, isFetching, chooseCountry}) => {
     )
 };
 
-export default Sidebar;
+export default React.memo(Sidebar);

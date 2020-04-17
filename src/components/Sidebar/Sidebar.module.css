@@ -3,17 +3,24 @@
     background: rgba(205, 214, 51, 0.1);
     border: 2px solid #EA5664;
     border-radius: 10px;
+    font-size: calc(8px + 1vmin);
 }
 
 .sidebar li {
     padding: 10px;
     cursor: pointer;
     border-bottom: 2px solid #EA5664;
-    transition: .2s linear;
+    transition: .15s linear;
 }
 
 .sidebar li:hover {
     background-color: #EA5664;
+    color: white;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: black;
 }
 
 .loadButton {

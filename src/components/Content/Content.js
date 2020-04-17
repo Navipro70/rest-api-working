@@ -1,10 +1,12 @@
 import React from "react";
 import classes from "./Content.module.css";
+import {NoCountry} from "./NoCountry";
 
 export const Content = ({country}) => {
-    if (country === null) return <div>Hello!</div>; // СДЕЛАТЬ КРАСИВУЮ ЗАГЛУШКУ ИЛИ ПОСТАВИТЬ ДЕФОЛТНУЮ СТРАНУ
+    if (country === null) return <NoCountry />; // СДЕЛАТЬ КРАСИВУЮ ЗАГЛУШКУ ИЛИ ПОСТАВИТЬ ДЕФОЛТНУЮ СТРАНУ
     const commonLiStyle = {marginLeft: "-20px"};// СТЕЛИЗОВАТЬ ВСЁ С ПОМОЩЬЮ UI MATERIAL ПОМЕНЯТЬ ФОН ДОБАВИТЬ ПОИСК
                                                 //ДОБАВИТЬ KEY В МАССИВ ДОБАВИТЬ ОБРАБОТКУ ОШИБКИ
+                                                // Убрать все перерисовки в header
     return (
         <div className={classes.main_div}>
             <h4>{country.name}</h4>
@@ -36,7 +38,6 @@ export const Content = ({country}) => {
                 {country.currencies.map(item => <li key={item + Math.random()}>{item}</li>)}
                 <li style={commonLiStyle}>Official languages: </li>
                 {country.languages.map(item => <li key={item + Math.random()}>{item}</li>)}
-
             </ul>
         </div>
     )

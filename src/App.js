@@ -4,6 +4,8 @@ import Header from "./components/Header/Header";
 import Container from "@material-ui/core/Container";
 import Grid from "@material-ui/core/Grid";
 import {Content} from "./components/Content/Content";
+import {Search} from "./components/Search/Search";
+import {FAQ} from "./components/FAQ/FAQ";
 import Sidebar from "./components/Sidebar/Sidebar";
 import {Route, Switch} from "react-router-dom";
 import {countriesApi} from "./API/countriesAPI";
@@ -37,8 +39,8 @@ export default class App extends React.Component {
                         <div className="content">
                             <Switch>
                                 <Route exact path="/" render={() => <Content country={currentCountry}/>}/>
-                                <Route path="/search" render={() => <Content/>}/>
-                                <Route path="/countries" render={() => <Content/>}/>
+                                <Route path="/search" render={() => <Search/>}/>
+                                <Route path="/FAQ" render={() => <FAQ/>}/>
                                 <Route render={() => <div>404 Not found</div>}/>
                             </Switch>
                         </div>

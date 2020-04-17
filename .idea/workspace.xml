@@ -2,11 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="98b648c8-6e56-458a-9322-d45041fe3cb0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/Content/NoCountry.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/FAQ/FAQ.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Search/Search.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Search/Search.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Content/Content.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content/Content.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Content/Content.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content/Content.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Sidebar/CountryItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sidebar/CountryItem.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Sidebar/Sidebar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sidebar/Sidebar.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Sidebar/Sidebar.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sidebar/Sidebar.module.css" afterDir="false" />
     </list>
@@ -45,6 +49,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\react-apps\rest-api-working\src\components\Search" />
       <recent name="D:\react-apps\rest-api-working\src\Common" />
     </key>
   </component>
@@ -88,7 +93,7 @@
       <workItem from="1587041786244" duration="93000" />
       <workItem from="1587041881233" duration="1246000" />
       <workItem from="1587043254311" duration="21666000" />
-      <workItem from="1587117460443" duration="9034000" />
+      <workItem from="1587117460443" duration="16929000" />
     </task>
     <servers />
   </component>
