@@ -36,7 +36,7 @@ export default class App extends React.Component {
                     <Grid item xs={9}>
                         <div className="content">
                             <Switch>
-                                <Route exact path="/" render={() => <Content contry={currentCountry}/>}/>
+                                <Route exact path="/" render={() => <Content country={currentCountry}/>}/>
                                 <Route path="/search" render={() => <Content/>}/>
                                 <Route path="/countries" render={() => <Content/>}/>
                                 <Route render={() => <div>404 Not found</div>}/>

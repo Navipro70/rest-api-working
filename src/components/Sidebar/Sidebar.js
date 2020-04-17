@@ -16,9 +16,9 @@ const Sidebar = ({countryData, isFetching, chooseCountry}) => {
                 .map((country, index) => <CountryItem countryHandler={chooseCountry} id={index}
                     key={country.name} {...country} />)}
 
-            <li className={classes.loadButton}>
+            <div className={classes.loadButton}>
                 <Button variant="contained" color="primary" onClick={loadMore} >Load more</Button>
-            </li>
+            </div>
         </ul>
     )
 };

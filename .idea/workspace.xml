@@ -4,11 +4,9 @@
     <list default="true" id="98b648c8-6e56-458a-9322-d45041fe3cb0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Images/loader.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Images/new.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Images/preloader.svg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Content/Content.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content/Content.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Sidebar/CountryItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sidebar/CountryItem.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Content/Content.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content/Content.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Sidebar/Sidebar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sidebar/Sidebar.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Sidebar/Sidebar.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sidebar/Sidebar.module.css" afterDir="false" />
     </list>
@@ -89,7 +87,8 @@
       <updated>1587041782160</updated>
       <workItem from="1587041786244" duration="93000" />
       <workItem from="1587041881233" duration="1246000" />
-      <workItem from="1587043254311" duration="21420000" />
+      <workItem from="1587043254311" duration="21666000" />
+      <workItem from="1587117460443" duration="9034000" />
     </task>
     <servers />
   </component>
