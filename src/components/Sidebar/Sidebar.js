@@ -1,4 +1,4 @@
-import React, { useState} from "react";
+import React, {useState} from "react";
 import classes from "./Sidebar.module.css";
 import Button from "@material-ui/core/Button";
 import {Preloader} from "../../Common/Preloader";
@@ -11,13 +11,13 @@ const Sidebar = ({countryData, isFetching, chooseCountry}) => {
     };
     return (
         <ul className={classes.sidebar}>
-            {isFetching && <Preloader />}
+            {isFetching && <Preloader/>}
             {countryData.slice(0, loadMoreCounter)
-                .map((country, index) => <CountryItem countryHandler={chooseCountry} id={index}
-                    key={country.name} {...country} />)}
+                .map((country) => <CountryItem countryHandler={chooseCountry}
+                                               key={country.name} {...country} />)}
 
             <div className={classes.loadButton}>
-                <Button variant="contained" color="primary" onClick={loadMore} >Load more</Button>
+                <Button variant="contained" color="primary" onClick={loadMore}>Load more</Button>
             </div>
         </ul>
     )

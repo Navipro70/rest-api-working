@@ -1,7 +1,7 @@
 import React from "react";
 import {NavLink} from "react-router-dom";
 
-export const CountryItem = ({name, countryHandler, id}) => {
+export const CountryItem = ({name, countryHandler}) => {
     let positionY;
     let timer;
     const onScrollWrapper = () => {
@@ -13,14 +13,14 @@ export const CountryItem = ({name, countryHandler, id}) => {
             window.scrollTo(0, positionY);
             positionY -= 100;
             timer = setTimeout(() => onScrollTop(positionY), 10)
-        }
-        else {
+        } else {
             clearTimeout(timer);
             window.scrollTo(0, 0);
         }
     };
     return (
-        <NavLink onClick={onScrollWrapper} to={'/'}><li onClick={() => countryHandler(id)}>{name}</li></NavLink>
-
+        <NavLink onClick={onScrollWrapper} to={'/'}>
+            <li onClick={() => countryHandler(name)}>{name}</li>
+        </NavLink>
     )
 };

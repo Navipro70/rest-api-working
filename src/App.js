@@ -22,8 +22,8 @@ export default class App extends React.Component {
             .then(response => this.setState({data: response, isFetching: false}))
     }
 
-    chooseCountry = (id) => {
-        this.setState({currentCountry: this.state.data[id]})
+    chooseCountry = (countryName) => {
+        this.setState({currentCountry: this.state.data.filter(item => item.name === countryName)[0]})
     }
 
     render() {
@@ -39,7 +39,7 @@ export default class App extends React.Component {
                         <div className="content">
                             <Switch>
                                 <Route exact path="/" render={() => <Content country={currentCountry}/>}/>
-                                <Route path="/search" render={() => <Search/>}/>
+                                <Route path="/search" render={() => <Search countries={data} chooseCountry={this.chooseCountry}/>}/>
                                 <Route path="/FAQ" render={() => <FAQ/>}/>
                                 <Route render={() => <div>404 Not found</div>}/>
                             </Switch>

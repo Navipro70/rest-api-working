@@ -2,11 +2,13 @@ import React from "react";
 import classes from "./Content.module.css";
 import {NoCountry} from "./NoCountry";
 
+const commonLiStyle = {marginLeft: "-20px"};
 export const Content = ({country}) => {
-    if (country === null) return <NoCountry />; // СДЕЛАТЬ КРАСИВУЮ ЗАГЛУШКУ ИЛИ ПОСТАВИТЬ ДЕФОЛТНУЮ СТРАНУ
-    const commonLiStyle = {marginLeft: "-20px"};// СТЕЛИЗОВАТЬ ВСЁ С ПОМОЩЬЮ UI MATERIAL ПОМЕНЯТЬ ФОН ДОБАВИТЬ ПОИСК
+     // СДЕЛАТЬ КРАСИВУЮ ЗАГЛУШКУ ИЛИ ПОСТАВИТЬ ДЕФОЛТНУЮ СТРАНУ
+    ;// СТЕЛИЗОВАТЬ ВСЁ С ПОМОЩЬЮ UI MATERIAL ПОМЕНЯТЬ ФОН ДОБАВИТЬ ПОИСК
                                                 //ДОБАВИТЬ KEY В МАССИВ ДОБАВИТЬ ОБРАБОТКУ ОШИБКИ
                                                 // Убрать все перерисовки в header
+    if (country === null) return <NoCountry />;
     return (
         <div className={classes.main_div}>
             <h4>{country.name}</h4>
