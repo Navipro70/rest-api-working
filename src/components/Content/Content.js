@@ -4,10 +4,6 @@ import {NoCountry} from "./NoCountry";
 
 const commonLiStyle = {marginLeft: "-20px"};
 export const Content = ({country}) => {
-     // СДЕЛАТЬ КРАСИВУЮ ЗАГЛУШКУ ИЛИ ПОСТАВИТЬ ДЕФОЛТНУЮ СТРАНУ
-    ;// СТЕЛИЗОВАТЬ ВСЁ С ПОМОЩЬЮ UI MATERIAL ПОМЕНЯТЬ ФОН ДОБАВИТЬ ПОИСК
-                                                //ДОБАВИТЬ KEY В МАССИВ ДОБАВИТЬ ОБРАБОТКУ ОШИБКИ
-                                                // Убрать все перерисовки в header
     if (country === null) return <NoCountry />;
     return (
         <div className={classes.main_div}>

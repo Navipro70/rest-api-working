@@ -14,12 +14,18 @@ import {countriesApi} from "./API/countriesAPI";
 export default class App extends React.Component {
     constructor(props) {
         super(props);
-        this.state = {data: [], isFetching: true, currentCountry: null};
+        this.state = {
+            data: [],
+            isFetching: true,
+            currentCountry: null,
+            error: null
+        };
     }
 
     componentDidMount() {
         countriesApi.getAllCountries()
             .then(response => this.setState({data: response, isFetching: false}))
+            .catch(err => this.setState({isFetching: false, error: err}))
     }
 
     chooseCountry = (countryName) => {
@@ -27,13 +33,13 @@ export default class App extends React.Component {
     }
 
     render() {
-        const {data, isFetching, currentCountry} = this.state;
+        const {data, isFetching, currentCountry, error} = this.state;
         return (
             <Container maxWidth="md">
                 <Header/>
                 <Grid container spacing={1} alignItems="stretch" direction="row">
                     <Grid item xs={3}>
-                        <Sidebar isFetching={isFetching} countryData={data} chooseCountry={this.chooseCountry}/>
+                        <Sidebar error={error} isFetching={isFetching} countryData={data} chooseCountry={this.chooseCountry}/>
                     </Grid>
                     <Grid item xs={9}>
                         <div className="content">

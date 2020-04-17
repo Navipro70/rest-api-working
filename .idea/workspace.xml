@@ -3,11 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="98b648c8-6e56-458a-9322-d45041fe3cb0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/API/countriesAPI.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/API/countriesAPI.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Content/Content.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content/Content.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Search/Search.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Search/Search.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Search/Search.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Search/Search.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Sidebar/CountryItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sidebar/CountryItem.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Sidebar/Sidebar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sidebar/Sidebar.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -29,6 +27,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/src/App.js" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/components/Header/Header.js" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/components/Sidebar/Sidebar.js" root0="SKIP_INSPECTION" />
   </component>
   <component name="ProjectId" id="1acjTDRKvvP9dk3JcLQFfcs90Cz" />
@@ -90,7 +89,8 @@
       <workItem from="1587041786244" duration="93000" />
       <workItem from="1587041881233" duration="1246000" />
       <workItem from="1587043254311" duration="21666000" />
-      <workItem from="1587117460443" duration="22846000" />
+      <workItem from="1587117460443" duration="22933000" />
+      <workItem from="1587154991963" duration="874000" />
     </task>
     <servers />
   </component>

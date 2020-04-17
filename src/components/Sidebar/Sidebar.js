@@ -4,11 +4,12 @@ import Button from "@material-ui/core/Button";
 import {Preloader} from "../../Common/Preloader";
 import {CountryItem} from "./CountryItem";
 
-const Sidebar = ({countryData, isFetching, chooseCountry}) => {
+const Sidebar = ({countryData, isFetching, chooseCountry, error}) => {
     const [loadMoreCounter, setLoadMore] = useState(20);
     const loadMore = () => {
         setLoadMore((prevLoadMoreCount) => prevLoadMoreCount + 20)
     };
+    if (error) return <div>Something went wrong</div>
     return (
         <ul className={classes.sidebar}>
             {isFetching && <Preloader/>}
